@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuidar · A glicemia chega à família e à médica com uma foto</title>
+  <meta name="description" content="Piloto de app no navegador do celular para idosos com pouca leitura registrarem a glicemia: foto do glicosímetro, confirmação com número gigante, envio no WhatsApp e relatório em PDF para a médica.">
+  <meta name="theme-color" content="#faf7f0">
+  <link rel="canonical" href="https://henrickbessa.github.io/cuidar-glicemia-landing/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cuidar">
+  <meta property="og:title" content="Cuidar · A glicemia chega à família e à médica com uma foto">
+  <meta property="og:description" content="Botões gigantes, figuras no lugar de palavras e uma voz que guia cada tela. Ela fotografa o visor, confirma o número e envia no WhatsApp.">
+  <meta property="og:url" content="https://henrickbessa.github.io/cuidar-glicemia-landing/">
+  <meta property="og:image" content="https://henrickbessa.github.io/cuidar-glicemia-landing/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cuidar: um celular com um botão azul gigante escrito Medir e a mensagem de glicemia chegando no WhatsApp.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-building-2" viewBox="0 0 24 24"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></symbol>
+<symbol id="i-calendar-x" viewBox="0 0 24 24"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="m14 13-4 4"/><path d="m10 13 4 4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-glasses" viewBox="0 0 24 24"><circle cx="6" cy="15" r="4"/><circle cx="18" cy="15" r="4"/><path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2"/><path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-heart-handshake" viewBox="0 0 24 24"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/></symbol>
+<symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-map-pin-house" viewBox="0 0 24 24"><path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/><path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/><path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></symbol>
+<symbol id="i-notebook-pen" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+<symbol id="i-piggy-bank" viewBox="0 0 24 24"><path d="M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z"/><path d="M16 10h.01"/><path d="M2 8v1a2 2 0 0 0 2 2h1"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+<symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+<symbol id="i-sunrise" viewBox="0 0 24 24"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+<symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-users-round" viewBox="0 0 24 24"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-octagon-alert" viewBox="0 0 24 24"><path d="M12 16h.01"/><path d="M12 8v4"/><path d="M15.312 2a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586l-4.688-4.688A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2z"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></symbol>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="container topo__linha">
+    <a class="marca" href="#inicio"><svg class="i i--cheio" aria-hidden="true"><use href="#i-droplet"/></svg>Cuidar</a>
+    <nav aria-label="Seções da página">
+      <ul class="menu">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#para-quem">Para quem</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--azul btn--p" href="https://cuidar-glicemia.vercel.app" target="_blank" rel="noopener">Ver o piloto<span class="sr-only"> (abre em nova aba)</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- 1. Hero -->
+  <section id="inicio" class="hero" aria-labelledby="hero-titulo">
+    <div class="container hero__grade">
+      <div class="hero__texto">
+        <p class="sobretitulo entra" style="--atraso:100ms">Piloto · glicemia sem caderninho</p>
+        <h1 id="hero-titulo" class="entra" style="--atraso:250ms">A glicemia da vovó chega à família e à médica <em>com uma foto.</em></h1>
+        <p class="lead entra" style="--atraso:450ms">O Cuidar é um app no navegador do celular feito para quem tem pouca leitura. Ela toca no botão azul, fotografa o visor do glicosímetro, confirma o número gigante e envia no WhatsApp. Tudo por figuras, cores e voz.</p>
+        <div class="acoes entra" style="--atraso:650ms">
+          <a class="btn btn--azul" href="https://cuidar-glicemia.vercel.app" target="_blank" rel="noopener">Ver o piloto<svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg><span class="sr-only"> (abre em nova aba)</span></a>
+          <a class="btn btn--claro" href="#contato">Fale com a gente</a>
+        </div>
+        <ul class="selos entra" style="--atraso:850ms">
+          <li><svg class="i" aria-hidden="true"><use href="#i-smartphone"/></svg>Sem instalar nada</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg>Não sugere dose</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-piggy-bank"/></svg>Custo zero de API</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="brilho" aria-hidden="true"></div>
+        <figure class="celular celular--g entra" style="--atraso:350ms">
+          <img src="img/telas/tela-inicio.png" width="720" height="1560" fetchpriority="high"
+               alt="Tela inicial do Cuidar: um botão azul gigante escrito Medir, com o desenho de uma gota, e abaixo o botão Minhas medidas.">
+        </figure>
+        <div class="flutua flutua--zap entra" style="--atraso:1100ms" aria-hidden="true">
+          <span class="flutua__icone"><svg class="i i--cheio"><use href="#i-whatsapp"/></svg></span>
+          <span><b>Mãe</b><br>🩸 Glicemia: 112 mg/dL · ☀️ Jejum</span>
+        </div>
+        <div class="flutua flutua--ok entra" style="--atraso:1350ms" aria-hidden="true">
+          <span class="flutua__icone"><svg class="i"><use href="#i-check"/></svg></span>
+          <span>Ela confirmou o número</span>
+        </div>
+        <p class="ficticio ficticio--hero">dados fictícios</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. A dor -->
+  <section id="problema" class="secao secao--alt" aria-labelledby="problema-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">O problema</p>
+        <h2 id="problema-titulo">O caderninho some. A consulta chega sem os números.</h2>
+        <p>Entre uma consulta e outra, o acompanhamento fica nas mãos da própria pessoa e da família. E as ferramentas que existem pedem o que muitos idosos não têm: leitura fácil e paciência com menus.</p>
+      </header>
+
+      <ul class="cartoes cartoes--4">
+        <li class="cartao" data-reveal>
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-notebook-pen"/></svg></span>
+          <h3>O papel se perde</h3>
+          <p>Anotações no caderninho somem, molham, ficam ilegíveis e quase nunca chegam inteiras à consulta.</p>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:100ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-calendar-x"/></svg></span>
+          <h3>O retorno fica na fila</h3>
+          <p>O retorno demora ou é esquecido. Sem registro organizado, a médica decide com o que a paciente consegue lembrar.</p>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:200ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-map-pin-house"/></svg></span>
+          <h3>A família está longe</h3>
+          <p>Filhos e netos não sabem se ela mediu hoje, nem se o número estava bom. Só descobrem quando algo dá errado.</p>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:300ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-glasses"/></svg></span>
+          <h3>Ler é difícil</h3>
+          <p>Letras pequenas, menus e senhas afastam quem tem pouca leitura ou enxerga mal. Os apps comuns não foram feitos para ela.</p>
+        </li>
+      </ul>
+
+      <ul class="numeros" data-reveal>
+        <li><strong>16,6 milhões</strong><span>de adultos de 20 a 79 anos vivem com diabetes no Brasil <a class="nota" href="#fonte-1" aria-label="Fonte 1">[1]</a></span></li>
+        <li><strong>12,9%</strong><span>dos adultos das capitais têm diagnóstico médico de diabetes. Em 2006 eram 5,5% <a class="nota" href="#fonte-2" aria-label="Fonte 2">[2]</a></span></li>
+        <li><strong>29,7%</strong><span>dos adultos das capitais têm diagnóstico médico de hipertensão <a class="nota" href="#fonte-2" aria-label="Fonte 2">[2]</a></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 e 4. A solução, passo a passo -->
+  <section id="como-funciona" class="secao" aria-labelledby="como-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">Como funciona</p>
+        <h2 id="como-titulo">Cinco toques. Nenhuma palavra para ler.</h2>
+        <p>Cada tela pede uma coisa só, com figura, cor e voz. O número vai para a família no WhatsApp e fica guardado para a médica.</p>
+      </header>
+
+      <div class="passos-rolagem" role="region" aria-label="Passo a passo, role para o lado" tabindex="0">
+        <ol class="passos">
+          <li class="passo" data-reveal>
+            <figure class="celular"><img src="img/telas/tela-inicio.png" width="720" height="1560" loading="lazy" alt="Tela inicial: botão azul gigante Medir."></figure>
+            <h3><span class="passo__n">1</span>Toca no azul</h3>
+            <p>Um botão gigante: <b>Medir</b>. Nada mais disputa a atenção.</p>
+          </li>
+          <li class="passo" data-reveal style="--atraso-r:100ms">
+            <figure class="celular"><img src="img/telas/tela-camera.png" width="720" height="1560" loading="lazy" alt="Câmera aberta com uma moldura de mira sobre o visor do glicosímetro e um botão redondo para tirar a foto."></figure>
+            <h3><span class="passo__n">2</span>Fotografa o visor</h3>
+            <p>A câmera já abre pronta. O número é lido no próprio celular, de graça.</p>
+          </li>
+          <li class="passo" data-reveal style="--atraso-r:200ms">
+            <figure class="celular"><img src="img/telas/tela-valor.png" width="720" height="1560" loading="lazy" alt="O número 112 em tamanho gigante, com um botão verde Está certo e um botão Corrigir."></figure>
+            <h3><span class="passo__n">3</span>Confirma o número</h3>
+            <p>O número aparece gigante. Verde se está certo; se não, corrige num teclado grande.</p>
+          </li>
+          <li class="passo" data-reveal style="--atraso-r:300ms">
+            <figure class="celular"><img src="img/telas/tela-momento.png" width="720" height="1560" loading="lazy" alt="Quatro figuras grandes para escolher o momento: sol nascendo para jejum, talheres para almoço, lua para noite e estrela para madrugada."></figure>
+            <h3><span class="passo__n">4</span>Escolhe a figura</h3>
+            <p>Sol nascendo, prato, lua ou estrela. Se quiser, um rostinho diz como ela está.</p>
+          </li>
+          <li class="passo" data-reveal style="--atraso-r:400ms">
+            <figure class="celular"><img src="img/telas/tela-enviar.png" width="720" height="1560" loading="lazy" alt="Resumo com o número 112, as figuras de jejum e de rosto sorridente e um botão verde gigante Enviar com o símbolo do WhatsApp."></figure>
+            <h3><span class="passo__n">5</span>Envia no WhatsApp</h3>
+            <p>Um toque no verde abre o WhatsApp com a mensagem pronta para a família.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="ficticio ficticio--centro">Telas de prévia com dados fictícios</p>
+
+      <div class="principio" data-reveal>
+        <div class="principio__cabeca">
+          <p class="sobretitulo sobretitulo--claro">Princípio nº 1</p>
+          <h3>Entender sem ler</h3>
+          <p>Se ela precisar ler para usar, o app falhou. Todo o desenho parte daí.</p>
+          <ul class="cores" aria-label="Cores com significado fixo">
+            <li><span class="cor" style="--c:var(--azul)"></span>Azul: medir</li>
+            <li><span class="cor" style="--c:var(--verde)"></span>Verde: confirmar e enviar</li>
+            <li><span class="cor" style="--c:var(--vermelho)"></span>Vermelho: voltar</li>
+            <li><span class="cor" style="--c:var(--amarelo)"></span>Amarelo: atenção</li>
+          </ul>
+        </div>
+        <ul class="principio__lista">
+          <li><svg class="i" aria-hidden="true"><use href="#i-sunrise"/></svg><div><b>Figuras no lugar de palavras</b>Ícones grandes e figurativos. O texto é só apoio.</div></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-palette"/></svg><div><b>Cor com significado fixo</b>A mesma cor quer dizer a mesma coisa em todas as telas.</div></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-hand"/></svg><div><b>Uma ação por tela</b>Cada tela pede uma coisa só, sem menus escondidos.</div></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-volume-2"/></svg><div><b>A tela fala</b>A voz do navegador lê cada tela em voz alta.</div></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg><div><b>Grande de verdade</b>Letra a partir de 22&nbsp;px e botões de no mínimo 64&nbsp;px.</div></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><div><b>Nada sem confirmação</b>O número só segue depois que ela confirma.</div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b. Família e médica -->
+  <section id="familia-e-medica" class="secao secao--alt" aria-labelledby="fm-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">Depois do toque</p>
+        <h2 id="fm-titulo">A família fica sabendo na hora. A médica vê o mês inteiro.</h2>
+      </header>
+
+      <div class="dupla">
+        <div class="dupla__item" data-reveal>
+          <div class="zap" role="img" aria-label="Ilustração de conversa no WhatsApp com dados fictícios. Chega a mensagem da Mãe: Glicemia 112 mg/dL, Jejum, 26/10 às 07:42, como se sente: Bem. A filha responde: Ótimo, mãe! Bom dia.">
+            <div class="zap__topo">
+              <span class="zap__avatar" aria-hidden="true">M</span>
+              <span><b>Mãe</b><small>online</small></span>
+            </div>
+            <div class="zap__conversa">
+              <span class="zap__dia">HOJE</span>
+              <p class="msg msg--dela">🩸 Glicemia: 112 mg/dL<br>☀️ Jejum<br>🕒 26/10 às 07:42<br>Como se sente: Bem<span class="msg__hora">07:43</span></p>
+              <p class="msg msg--minha">Ótimo, mãe! Bom dia ❤️<span class="msg__hora">07:50 ✓✓</span></p>
+            </div>
+            <span class="ficticio ficticio--canto">dados fictícios</span>
+          </div>
+          <h3>Mensagem pronta, no app que a família já usa</h3>
+          <p>O botão verde abre o WhatsApp com número, momento, hora e como ela se sente. Sem cadastro da família e sem API paga: é um link do próprio WhatsApp.</p>
+        </div>
+
+        <div class="dupla__item" data-reveal style="--atraso-r:150ms">
+          <div class="relatorio">
+            <figure class="celular celular--m"><img src="img/telas/tela-historico.png" width="720" height="1560" loading="lazy" alt="Histórico Minhas medidas: lista de valores com marcação verde para normal, amarela para atenção e vermelha para fora da faixa, e o botão Relatório para a médica."></figure>
+            <div class="pdf" role="img" aria-label="Ilustração do relatório em PDF com dados fictícios: período de 1 a 26 de outubro, gráfico das medições com a faixa verde de 70 a 180 e tabela com data, momento e valor.">
+              <div class="pdf__topo"><b>Relatório de glicemia</b><small>01/10 a 26/10 · dados fictícios</small></div>
+              <svg class="pdf__grafico" viewBox="0 0 280 110" aria-hidden="true">
+                <rect x="20" y="40" width="256" height="44" class="faixa"/>
+                <line x1="20" y1="100" x2="276" y2="100" class="eixo"/>
+                <text x="16" y="43" class="rotulo" text-anchor="end">180</text>
+                <text x="16" y="87" class="rotulo" text-anchor="end">70</text>
+                <polyline class="linha" points="30,60 48,56 66,74 84,46 102,64 120,30 138,58 156,52 174,70 192,93 210,62 228,54 246,22 264,57"/>
+                <g class="pt-ok"><circle cx="30" cy="60" r="3.5"/><circle cx="48" cy="56" r="3.5"/><circle cx="66" cy="74" r="3.5"/><circle cx="84" cy="46" r="3.5"/><circle cx="102" cy="64" r="3.5"/><circle cx="138" cy="58" r="3.5"/><circle cx="156" cy="52" r="3.5"/><circle cx="174" cy="70" r="3.5"/><circle cx="210" cy="62" r="3.5"/><circle cx="228" cy="54" r="3.5"/><circle cx="264" cy="57" r="3.5"/></g>
+                <g class="pt-atencao"><path d="M120 25.5l4.5 8h-9z"/><path d="M246 17.5l4.5 8h-9z"/></g>
+                <g class="pt-fora"><path d="M192 88l5 5-5 5-5-5z"/></g>
+              </svg>
+              <ul class="pdf__legenda" aria-hidden="true"><li><i class="pt pt--ok"></i>normal</li><li><i class="pt pt--atencao"></i>atenção</li><li><i class="pt pt--fora"></i>fora</li></ul>
+              <table aria-hidden="true">
+                <thead><tr><th>Data</th><th>Momento</th><th>mg/dL</th></tr></thead>
+                <tbody>
+                  <tr><td>26/10 07:42</td><td>Jejum</td><td>112</td></tr>
+                  <tr><td>25/10 20:15</td><td>Noite</td><td class="v-atencao">214</td></tr>
+                  <tr><td>25/10 13:05</td><td>Almoço</td><td>156</td></tr>
+                  <tr><td>24/10 03:10</td><td>Madrugada</td><td class="v-fora">64</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h3>Histórico com cores e relatório para a médica</h3>
+          <p>Verde é normal, amarelo pede atenção, vermelho está fora da faixa. Um toque em <b>Relatório para a médica</b> gera um PDF do período escolhido, com tabela e gráfico, para imprimir ou mostrar na consulta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Para quem -->
+  <section id="para-quem" class="secao" aria-labelledby="quem-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">Para quem</p>
+        <h2 id="quem-titulo">Começa em casa. Pode chegar à UBS e às equipes de cuidado.</h2>
+      </header>
+
+      <div class="publicos">
+        <article class="publico" data-reveal>
+          <span class="etiqueta etiqueta--verde">No piloto</span>
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-heart-handshake"/></svg></span>
+          <h3>Família e idoso</h3>
+          <ul class="lista-check">
+            <li>Ela mede sozinha, sem precisar ler.</li>
+            <li>A família recebe cada medida no WhatsApp, onde já conversa.</li>
+            <li>Na consulta, um PDF organizado no lugar do caderninho.</li>
+          </ul>
+        </article>
+
+        <article class="publico" data-reveal style="--atraso-r:100ms">
+          <span class="etiqueta etiqueta--amarela">Próximo passo</span>
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-users-round"/></svg></span>
+          <h3>Empresas de cuidadores de idosos</h3>
+          <ul class="lista-check">
+            <li>Um cuidador acompanha vários idosos no mesmo app.</li>
+            <li>O cuidador registra por eles, com o mesmo fluxo simples.</li>
+            <li>Relatório separado por pessoa, para a família e para a médica.</li>
+          </ul>
+          <p class="honesto">Hoje cada celular registra uma pessoa. O modo cuidador está no roadmap.</p>
+        </article>
+
+        <article class="publico publico--largo" data-reveal>
+          <div class="publico__texto">
+            <span class="etiqueta etiqueta--amarela">Próximo passo</span>
+            <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-building-2"/></svg></span>
+            <h3>UBS e Secretaria de Saúde</h3>
+            <p>Acompanhar quem vive com diabetes e hipertensão entre uma consulta e outra, com dados que chegam de casa.</p>
+            <ul class="lista-check">
+              <li>Medições organizadas por pessoa acompanhada.</li>
+              <li>Alerta para a equipe quando aparecem valores críticos.</li>
+              <li>Indicadores de diabetes e hipertensão do território.</li>
+            </ul>
+            <p class="honesto">Hoje o piloto registra só glicemia. Pressão arterial e o painel para a UBS são próximos passos; o painel desta seção é uma ilustração.</p>
+          </div>
+
+          <div class="painel" role="img" aria-label="Ilustração de painel para a UBS com dados fictícios: 48 pessoas acompanhadas, 312 medições em 7 dias, 74% na faixa combinada, 3 alertas para a equipe, gráfico de medições por dia e lista de pessoas para contato hoje. Pressão arterial aparece como em breve.">
+            <div class="painel__topo"><span><svg class="i" aria-hidden="true"><use href="#i-activity"/></svg>UBS Exemplo · Crônicos</span><span class="etiqueta etiqueta--neutra">Ilustração · dados fictícios</span></div>
+            <ul class="painel__kpis">
+              <li><small>Pessoas acompanhadas</small><b>48</b></li>
+              <li><small>Medições em 7 dias</small><b>312</b></li>
+              <li><small>Na faixa combinada</small><b>74%</b></li>
+              <li><small>Alertas para a equipe</small><b class="t-fora">3</b></li>
+            </ul>
+            <div class="painel__corpo">
+              <div class="painel__bloco">
+                <small>Medições por dia</small>
+                <svg viewBox="0 0 220 96" class="barras" aria-hidden="true">
+                  <line x1="0" y1="80" x2="220" y2="80" class="eixo"/>
+                  <rect x="6" y="28" width="22" height="52" rx="4"/><rect x="37" y="20" width="22" height="60" rx="4"/><rect x="68" y="34" width="22" height="46" rx="4"/><rect x="99" y="16" width="22" height="64" rx="4"/><rect x="130" y="26" width="22" height="54" rx="4"/><rect x="161" y="40" width="22" height="40" rx="4"/><rect x="192" y="30" width="22" height="50" rx="4"/>
+                  <g class="rotulo"><text x="17" y="93">S</text><text x="48" y="93">T</text><text x="79" y="93">Q</text><text x="110" y="93">Q</text><text x="141" y="93">S</text><text x="172" y="93">S</text><text x="203" y="93">D</text></g>
+                </svg>
+              </div>
+              <div class="painel__bloco">
+                <small>Para contato hoje</small>
+                <ul class="painel__lista">
+                  <li><span class="ponto ponto--fora"></span>Pessoa 014<em>glicemia 312</em></li>
+                  <li><span class="ponto ponto--atencao"></span>Pessoa 027<em>3 altas na semana</em></li>
+                  <li><span class="ponto ponto--neutro"></span>Pessoa 033<em>5 dias sem medir</em></li>
+                </ul>
+              </div>
+            </div>
+            <div class="painel__breve"><svg class="i" aria-hidden="true"><use href="#i-heart-pulse"/></svg>Pressão arterial · em breve</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Segurança e ética -->
+  <section id="seguranca" class="secao secao--alt" aria-labelledby="seg-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">Segurança e ética</p>
+        <h2 id="seg-titulo">Ajuda a cuidar, sem tomar o lugar da médica.</h2>
+      </header>
+
+      <ul class="cartoes cartoes--3">
+        <li class="cartao" data-reveal>
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+          <h3>Não sugere dose nem diagnóstico</h3>
+          <p>O Cuidar só registra e organiza. Quem orienta o tratamento é a equipe de saúde.</p>
+        </li>
+        <li class="cartao cartao--alerta" data-reveal style="--atraso-r:100ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-triangle-alert"/></svg></span>
+          <h3>Aviso de valor crítico</h3>
+          <p>Abaixo de 70 ou acima de 300&nbsp;mg/dL, a tela mostra e fala: <b>avise sua família, procure ajuda.</b> A mensagem do WhatsApp já chega com o alerta.</p>
+          <span class="mini-alerta" aria-hidden="true"><svg class="i"><use href="#i-octagon-alert"/></svg><b>64</b>Avise sua família</span>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:200ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg></span>
+          <h3>Nada sai sem confirmação</h3>
+          <p>A leitura da foto pode errar. Por isso ela sempre confere o número gigante antes de qualquer envio.</p>
+        </li>
+        <li class="cartao" data-reveal>
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg></span>
+          <h3>Cada aparelho só vê os seus dados</h3>
+          <p>Banco no Supabase com RLS (segurança por linha): cada celular é um usuário anônimo e só lê o que ele mesmo gravou.</p>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:100ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-scale"/></svg></span>
+          <h3>Pensado para a LGPD</h3>
+          <p>Dado de saúde é dado pessoal sensível na <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">LGPD<span class="sr-only"> (abre em nova aba)</span></a>. Guardamos só o necessário: número, momento, como ela se sente e hora. Sem nome, CPF, telefone ou foto.</p>
+        </li>
+        <li class="cartao" data-reveal style="--atraso-r:200ms">
+          <span class="cartao__icone"><svg class="i" aria-hidden="true"><use href="#i-piggy-bank"/></svg></span>
+          <h3>Custo zero de API</h3>
+          <p>A leitura do número roda no próprio navegador e o envio usa o link do WhatsApp. Nenhuma API paga por foto ou por mensagem.</p>
+        </li>
+      </ul>
+
+      <p class="aviso-piloto" data-reveal><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg><span><b>É um piloto.</b> As faixas de cor (verde de 70 a 180, amarelo de 181 a 300, vermelho abaixo de 70 ou acima de 300&nbsp;mg/dL) são provisórias e serão revisadas com a médica antes de qualquer uso real.</span></p>
+    </div>
+  </section>
+
+  <!-- 7. Próximos passos -->
+  <section id="proximos-passos" class="secao" aria-labelledby="pp-titulo">
+    <div class="container">
+      <header class="cabeca" data-reveal>
+        <p class="sobretitulo">Próximos passos</p>
+        <h2 id="pp-titulo">Do piloto em casa ao cuidado em rede.</h2>
+      </header>
+      <ol class="trilha">
+        <li class="trilha__item trilha__item--agora" data-reveal><span class="etiqueta etiqueta--verde">Agora</span><h3>Piloto com uma família</h3><p>Glicemia por foto, confirmação, envio no WhatsApp, histórico com cores e PDF para a médica.</p></li>
+        <li class="trilha__item" data-reveal style="--atraso-r:100ms"><h3>Validar com quem usa</h3><p>Testes com idosos, famílias e a médica: figuras, voz, textos e faixas de cor.</p></li>
+        <li class="trilha__item" data-reveal style="--atraso-r:200ms"><h3>Pressão arterial</h3><p>O mesmo fluxo de foto e confirmação para o aparelho de pressão.</p></li>
+        <li class="trilha__item" data-reveal style="--atraso-r:300ms"><h3>Modo cuidador</h3><p>Vários idosos por cuidador, com relatório por pessoa.</p></li>
+        <li class="trilha__item" data-reveal style="--atraso-r:400ms"><h3>Painel para a UBS</h3><p>Acompanhamento de crônicos e indicadores para a equipe, com as autorizações necessárias.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA final + contato -->
+  <section id="contato" class="contato" aria-labelledby="contato-titulo">
+    <div class="container"><div class="contato__caixa" data-reveal>
+      <svg class="i i--cheio contato__gota" aria-hidden="true"><use href="#i-droplet"/></svg>
+      <h2 id="contato-titulo">Fale com a gente</h2>
+      <p>Quer testar com a sua família, levar para a sua UBS ou para a sua equipe de cuidadores? Conte o que você precisa.</p>
+      <div class="acoes acoes--centro">
+        <a class="btn btn--verde" href="https://wa.me/5547988800836?text=Ol%C3%A1!%20Vi%20a%20apresenta%C3%A7%C3%A3o%20do%20Cuidar%20e%20quero%20saber%20mais." target="_blank" rel="noopener"><svg class="i i--cheio" aria-hidden="true"><use href="#i-whatsapp"/></svg>Conversar no WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+        <a class="btn btn--contorno" href="https://cuidar-glicemia.vercel.app" target="_blank" rel="noopener">Ver o piloto<span class="sr-only"> (abre em nova aba)</span></a>
+      </div>
+      <p class="contato__numero">WhatsApp <a href="https://wa.me/5547988800836" target="_blank" rel="noopener">(47) 98880-0836<span class="sr-only"> (abre em nova aba)</span></a></p>
+    </div></div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container rodape__grade">
+    <div>
+      <p class="marca marca--rodape"><svg class="i i--cheio" aria-hidden="true"><use href="#i-droplet"/></svg>Cuidar</p>
+      <p>Nome provisório · piloto em teste.</p>
+      <p>Todas as telas, nomes, números e conversas desta página são fictícios. Nenhum dado real de saúde é exibido.</p>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Fontes</h2>
+      <ol class="fontes">
+        <li id="fonte-1">International Diabetes Federation. <a href="https://diabetesatlas.org/data-by-location/country/brazil/" target="_blank" rel="noopener">IDF Diabetes Atlas, 11ª edição (2025): Brasil</a>. 16,6 milhões de adultos de 20 a 79 anos com diabetes em 2024 (<a href="https://media.idf.org/media/uploads/sites/3/2025/08/IDF_Atlas_11_2025_SACA_Factsheet.pdf" target="_blank" rel="noopener">ficha da região, PDF</a>).</li>
+        <li id="fonte-2">Ministério da Saúde. <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/diabetes-cresce-135-no-brasil-em-18-anos-hipertensao-e-obesidade-tambem-avancam-saude-lanca-viva-mais-brasil-com-r-340-mi-para-a-promocao-da-saude" target="_blank" rel="noopener">Vigitel Brasil 2025</a>, dados de 2024, adultos das capitais e do Distrito Federal: diagnóstico médico de diabetes (12,9%) e de hipertensão (29,7%).</li>
+      </ol>
+      <p class="rodape__pequeno">Ícones: <a href="https://lucide.dev" target="_blank" rel="noopener">Lucide</a> (licença ISC).</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
