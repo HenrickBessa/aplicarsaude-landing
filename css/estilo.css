@@ -395,3 +395,10 @@ p { text-wrap: pretty; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* Plano */
+.preco { color: var(--tinta-suave); }
+.preco b { font-family: var(--serif); font-weight: 600; font-size: clamp(2.2rem, 1.8rem + 1.6vw, 3rem); color: var(--tinta); margin-right: 0.35rem; }
+.publico .btn { justify-self: start; }
+.publico--destaque { border-color: var(--verde); box-shadow: 0 0 0 3px var(--verde-claro); }
+.plano__quem { margin-top: 1.25rem; }
