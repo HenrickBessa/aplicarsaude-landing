@@ -19,7 +19,7 @@ Página de venda do **AplicarSaúde** para o público final (pessoas idosas, fam
 
 ## Regras da página
 
-- Os botões levam ao **app**, nunca direto ao checkout: "Assinar" abre `https://aplicarsaude.vercel.app/assinar`, onde o link de pagamento é gerado com o token do aparelho. Sem esse token a compra não fica ligada ao celular de quem mede.
+- Os botões levam ao **app**, nunca direto ao checkout: "Assinar" abre `https://aplicarsaude.vercel.app/assinar`, onde o link de pagamento é gerado com um token. Quem paga assina no próprio celular e depois envia o link de ativação para quem mede; sem o token, a compra não fica ligada a ninguém.
 - O preço aparece em `index.html` (plano, dúvidas e metadados) e em `img/og.png`: mudou a oferta, muda nos quatro.
 - O repositório é público: nenhum segredo, chave ou identificador interno aqui.
 
