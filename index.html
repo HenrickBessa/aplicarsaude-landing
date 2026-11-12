@@ -61,6 +61,7 @@
     <a class="marca" href="#inicio"><img src="img/aplicarsaude-horizontal.png" width="600" height="110" alt="AplicarSaúde, início da página"></a>
     <nav aria-label="Seções da página">
       <ul class="menu">
+        <li><a href="#video">Vídeo</a></li>
         <li><a href="#como-funciona">Como funciona</a></li>
         <li><a href="#acompanhar">Família</a></li>
         <li><a href="#plano">Plano</a></li>
@@ -108,6 +109,27 @@
         </div>
         <p class="ficticio ficticio--hero">dados fictícios</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Vídeo -->
+  <section id="video" class="secao" aria-labelledby="video-titulo">
+    <div class="container video">
+      <header class="cabeca video__texto" data-reveal>
+        <p class="sobretitulo">Em 45 segundos</p>
+        <h2 id="video-titulo">A Dona Maria, o caderninho que some e a neta que mora longe.</h2>
+        <p>Veja como uma foto do aparelho leva a pressão e a glicemia até a família e a médica.</p>
+        <div class="acoes">
+          <a class="btn btn--azul" href="https://aplicarsaude.vercel.app" target="_blank" rel="noopener">Começar grátis<span class="sr-only"> (abre em nova aba)</span></a>
+          <a class="btn btn--claro" href="#plano">Ver o plano</a>
+        </div>
+      </header>
+      <figure class="celular video__tela" data-reveal>
+        <video controls playsinline preload="none" poster="img/video-lancamento.webp" width="720" height="1280" aria-label="Vídeo de 45 segundos, com narração: a história da Dona Maria, que anotava a pressão no caderninho, e de como a neta passou a acompanhar as medidas pelo AplicarSaúde.">
+          <source src="img/video-lancamento.mp4" type="video/mp4">
+        </video>
+        <figcaption class="ficticio ficticio--centro">Personagens e dados fictícios</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -369,7 +391,7 @@
             <li>Cancele quando quiser.</li>
           </ul>
           <a class="btn btn--verde" href="https://aplicarsaude.vercel.app/assinar" target="_blank" rel="noopener">Assinar<span class="sr-only"> (abre em nova aba)</span></a>
-          <p class="honesto">A assinatura vale no celular em que é feita. Abra este botão no celular de quem vai medir. Se outra pessoa for pagar, toque em “Pedir à família” na tela de assinar: o link de pagamento vai pelo WhatsApp.</p>
+          <p class="honesto">A assinatura fica ligada ao celular de quem mede. Se quem paga é outra pessoa, o caminho é pelo app dela: o botão “Pedir à família” envia um convite pelo WhatsApp, e quem recebe abre a página de assinatura e paga no próprio celular.</p>
         </article>
       </div>
 
@@ -462,7 +484,7 @@
         </li>
         <li class="cartao" data-reveal style="--atraso-r:200ms">
           <h3>Quem paga a assinatura?</h3>
-          <p>Quem a família quiser. A assinatura fica ligada ao celular de quem mede; o link de pagamento pode ser enviado pelo WhatsApp para um filho ou uma neta pagar.</p>
+          <p>Quem a família quiser. Pelo app de quem mede, o botão “Pedir à família” envia um convite pelo WhatsApp. O filho ou a neta abre o convite, vê como funciona e paga no próprio celular; o acesso é liberado no celular de quem mede.</p>
         </li>
         <li class="cartao" data-reveal>
           <h3>Como é o pagamento?</h3>

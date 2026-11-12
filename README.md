@@ -8,13 +8,14 @@ Página de venda do **AplicarSaúde** para o público final (pessoas idosas, fam
 ## O que a página mostra
 
 1. **Hero**: a proposta e a tela inicial do app. Botão principal "Começar grátis" (abre o app).
-2. **O problema**: o caderninho que some, com números de diabetes e hipertensão com fonte.
-3. **Como funciona**: o caminho da pressão e o da glicemia, pelo princípio "entender sem ler".
-4. **Depois do toque**: a mensagem no WhatsApp, o Caderno com cores e o PDF para a médica.
-5. **A família acompanha**: o link só de leitura e o painel.
-6. **Plano**: o que é grátis e o que faz parte da assinatura, e para quem é (quem mede, a família, quem cuida).
-7. **Segurança e ética**: aviso de valor crítico, sem dose nem diagnóstico, confirmação, privacidade e LGPD. Aviso fixo: "Registro feito em casa. Não substitui avaliação médica."
-8. **Dúvidas** e **contato** (WhatsApp).
+2. **Vídeo**: a história da Dona Maria em 45 segundos, com narração (`img/video-lancamento.mp4`, gerado no projeto `video/` do repositório do app).
+3. **O problema**: o caderninho que some, com números de diabetes e hipertensão com fonte.
+4. **Como funciona**: o caminho da pressão e o da glicemia, pelo princípio "entender sem ler".
+5. **Depois do toque**: a mensagem no WhatsApp, o Caderno com cores e o PDF para a médica.
+6. **A família acompanha**: o link só de leitura e o painel.
+7. **Plano**: o que é grátis e o que faz parte da assinatura, e para quem é (quem mede, a família, quem cuida).
+8. **Segurança e ética**: aviso de valor crítico, sem dose nem diagnóstico, confirmação, privacidade e LGPD. Aviso fixo: "Registro feito em casa. Não substitui avaliação médica."
+9. **Dúvidas** e **contato** (WhatsApp).
 
 ## Regras da página
 
