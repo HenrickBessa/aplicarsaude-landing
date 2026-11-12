@@ -402,3 +402,11 @@ p { text-wrap: pretty; }
 .publico .btn { justify-self: start; }
 .publico--destaque { border-color: var(--verde); box-shadow: 0 0 0 3px var(--verde-claro); }
 .plano__quem { margin-top: 1.25rem; }
+
+/* Vídeo */
+.video { display: grid; gap: 2rem; align-items: center; }
+.video__texto { margin-bottom: 0; }
+.video__tela { width: min(100%, 19rem); justify-self: center; }
+.video__tela video { display: block; width: 100%; height: auto; border-radius: 2.1rem; background: #1f1c19; }
+.video__tela figcaption { margin-top: 0.6rem; color: rgb(255 255 255 / 0.7); }
+@media (min-width: 52rem) { .video { grid-template-columns: 1.1fr 0.9fr; gap: 4rem; } }
